@@ -22,15 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class login extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+  /* Example taken from Codebun */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
@@ -50,6 +42,7 @@ public class login extends HttpServlet {
             out.close();
             String name= request.getParameter("uname");
            String pass= request.getParameter("pass");
+           //Connection to database 
            mydb db = new mydb();
            Connection con = db.getCon() ;
            Statement stmt = con.createStatement();
@@ -74,6 +67,7 @@ public class login extends HttpServlet {
             processRequest(request, response);
         } catch (SQLException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            
         }
     }
 
@@ -89,7 +83,7 @@ public class login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-             String name= request.getParameter("uname");
+            String name= request.getParameter("uname");
            String pass= request.getParameter("pass");
            mydb db = new mydb();
            Connection con = db.getCon() ;

@@ -15,13 +15,10 @@ import java.util.logging.Logger;
  *
  * @author yomte
  */
+//Code is from the method shown in https://www.youtube.com/watch?v=akW6bzoRcZo&ab_channel=Codebun //
 public class mydb {
     Connection con;
 
-    /**
-     *
-     * @return
-     */
     public Connection getCon() throws SQLException
     {
         try {

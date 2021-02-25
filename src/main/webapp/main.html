@@ -10,33 +10,77 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type=="text/css">
+        
   
     </head>
     <body>
-        <ul class="nav">
-            <li><a href="a">Home</a></li><!-- comment -->
-             <li><a href="schedule.html"> This weeks Schedule</a></li>
-             <li><a href="a">Streams</a></li>
-              <li><a href="Shop.html">Purchase</a></li>
-               <li><a href="forum.html">Forum</a></li>
-                <li><a href="a">Contact Us</a></li>
-        </ul>
+        <style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="active" href="main.html">Home</a></li>
+  <li><a href="Stream.html">Stream</a></li>
+  <li><a href="forum.html">Forum</a></li>
+  <li class="right"><a href="contact.html">Contact Us</a></li>
+</ul>
+
         <h2>Welcome To GAA Life</h2>
         <p>Home to GAA Streaming,News and Chat for lovers of Hurling and Football</p>
         
-    
-        
-    <b>Highlights</>
-       
-        <a href="https://www.youtube.com/watch?v=3zX1ocEXuGg&ab_channel=GAAHighlights">Tipp Vs Galway</a>
-          
-           
-        <a href="https://www.youtube.com/watch?v=BjC21PgSun4&ab_channel=GAAHighlights">Waterford vs Clare</a>
-        
-        <b><p>Schedule</p><b><!-- comment -->
-            <p> All Ireland Final: Limerick vs Waterford 3:30pm Croke Park Sunday</p><!-- comment -->
-            <p> Pre match analysis from Sky Sports</p>
-            <a href="https://www.skysports.com/gaa/hurling/news/30554/12156247/limerick-vs-waterford-all-ireland-hurling-final-expert-predictions">Sky Sports Predictions</a>
-            <p>Bookies Odds Limerick 4/6 Waterford 13/8</p>
+      <!-- Using twitter widget https://publish.twitter.com/?maxheight=500&maxwidth=300&query=https%3A%2F%2Ftwitter.com%2FRTEgaa&widget=Timeline -->    
+     <a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/RTEgaa?ref_src=twsrc%5Etfw">Tweets by RTEgaa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     
+     <div id="disqus_thread"></div>
+<script>
+    <!--Code taken from Disqus tutorial https://gaalife.disqus.com/admin/install/platforms/universalcode/-->
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gaalife.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                   
     </body>
