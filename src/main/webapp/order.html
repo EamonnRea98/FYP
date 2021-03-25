@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gaa Life</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="order.css">
+    </head>
+    <body>
+        <style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+<ul class="topnav">
+  <li><a class="active" href="main.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="forum.html">Forum</a></li>
+  <li><a href="blog.html">Write for Us</a></li>
+  <li><a href="BlogSubmitted.html">Our Users Opinions</a></li>
+  <li class="right"><a href="contact.html">Contact Us</a></li>
+</ul>
+        
+          <form action="billing.html" onsubmit="return validateform()" method="post" id="order_form">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail">Email</label>
+      <input type="Email" class="form-control" id="inputEmail" name="orderEmail" placeholder="Email" required>
+    </div>
+      
+    <div class="form-group col-md-6">
+      <label for="inputNumber">Contact Number.</label>
+      <input type="tel" class="form-control" id="inputContactno"  name="orderContactno" placeholder="Contact no." required >
+    </div>
+  </div>
+                    
+  <div class="form-group">
+        <label for="inputCounty">County</label>
+    <input type="text" class="form-control" id="inputCounty" name="orderCounty" placeholder="" required maxlength="50">
+  </div>
+  
+                    
+  
+      
+    <div class="form-group col-md-5">
+      <label for="inputProduct">Product</label>
+      
+        <option value ="" selected>Select Product </option>
+        <option value=	"Automotive">Jersey </option>
+        <option value=	"Half-zip">Half-zip</option>
+        <option value=	"Hats">Computers & Electronics</option>
+        
+    </div>
+      
+    <div class="form-group col-md-2">
+      <label for="inputQuantity">Quantity</label>
+      <input type="number" class="form-control" id="inputQuantity" name="orderQuantity" required>
+    </div>
+    
+    <div class="form-group col-md-4">
+        <label for="inputSize">Size</label>
+      <select id="inputsize" class="form-control" name="ordersize" required>
+        <option value="" selected>Select Size</option>
+        <option value="XS">XS</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+        <option value="Extra Large">Extra large</option>
+        <option value="Tipperary">Kid</option>
+        <option value="Clare">Baby</option>
+        
+      </select>
+        <button type="submit" formaction="billing.html" class="btn btn-primary">Submit Order</button>
+  </div>
+  <div class="form-group">
+    
+  </div>
+  
+  
+  
+</form>
+    
+    
+    
+        
+            
+    
+          
+    </body>
+</html>
