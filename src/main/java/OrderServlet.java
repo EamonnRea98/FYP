@@ -45,15 +45,14 @@ Connection con=DriverManager.getConnection(
 "jdbc:mysql://localhost:3306/my_db","Eamonn","kanturk98");
   
 PreparedStatement ps=con.prepareStatement(  
-"INSERT INTO Orders (email, Contactno, County, Product, Date, Qty, Size) VALUES (?,?,?,?,?,?,?,?);"); 
+"INSERT INTO Orders (email, Contactno, County, Product,  Qty, Size) VALUES (?,?,?,?,?,?,?,?);"); 
   
 ps.setString(1,email);
 ps.setString(2,contactno);
 ps.setString(3,county);
 ps.setString(4,product);  
-ps.setString(5,date);
-ps.setInt(6,Quantity);
-ps.setString(7,size);
+ps.setInt(5,Quantity);
+ps.setString(6,size);
 int i=ps.executeUpdate();  
 if(i>0)  
 
