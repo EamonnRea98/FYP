@@ -40,7 +40,7 @@ public class blog extends HttpServlet{
             String blog_content = request.getParameter("blog_content");
             
 
-            //connecting to our db
+            
             mydb db = new mydb();
             Connection con = db.getCon();
 
