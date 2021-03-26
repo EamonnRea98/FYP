@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author yomte
  */
+// Used some tips from https://learningprogramming.net/java/jsp-servlet/shopping-cart-with-session-in-jsp-servlet/
 public class OrderServlet extends HttpServlet {
     
     public void doPost(HttpServletRequest request, HttpServletResponse response)  
