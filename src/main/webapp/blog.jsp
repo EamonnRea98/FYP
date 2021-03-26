@@ -57,9 +57,37 @@ ul.topnav li.right {float: right;}
   <li><a href="BlogSubmitted.html">Our Users Opinions</a></li>
   <li class="right"><a href="contact.html">Contact Us</a></li>
 </ul>
+     <h2>Would you like to see your opinions published</h2>
+
+                <p>Do you feel like you know your stuff when it comes to all things GAA? Do you have something to say and want people to hear it?.</p>
+
+                <p>Send us in your blog posts on whatever topic you feel passionate about and we'll .</p>
+
+                <label for="blog_type"><b>Blog type:</b></label>
+                <select name="blog_type" id="blog_type">
+                    <option>Hurling</option>
+                    <option>Football</option>
+                </select>        
+
+                <br/>
+                <br/>
+
+                <%--All details to be inserted into SQL table for blog posts--%> 
+                <label for="blog_title"><b>Post title:</b></label>
+                <input type="text" name="blog_title" placeholder="Post Title"/>
+
+                <br/>
+                <br/>
+
+                <div id="textareastuff">
+                    <label for="blog_content"><b>Your blog</b></label>
+                    <textarea placeholder="Blog Content" name="blog_content" cols="50" rows="10"></textarea>
+                </div>
+
+                <br/>
 
         <h2>Welcome To GAA Life</h2>
-        <p>Home to GAA Streaming,News and Chat for lovers of Hurling and Football</p>
+        <p>Home to GAA News and Chat for lovers of Hurling and Football</p>
         <form action="main.html">
 
 <textarea id="w3review" name="w3review" rows="10" cols="50">
