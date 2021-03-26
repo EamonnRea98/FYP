@@ -61,7 +61,7 @@ ul.topnav li.right {float: right;}
 
                 <p>Do you feel like you know your stuff when it comes to all things GAA? Do you have something to say and want people to hear it?.</p>
 
-                <p>Send us in your blog posts on whatever topic you feel passionate about and we'll .</p>
+                <p>Send us in your blog posts on whatever topic you feel passionate about and we'll upload the best.</p>
 
                 <label for="blog_type"><b>Blog type:</b></label>
                 <select name="blog_type" id="blog_type">
@@ -72,7 +72,7 @@ ul.topnav li.right {float: right;}
                 <br/>
                 <br/>
 
-                <%--All details to be inserted into SQL table for blog posts--%> 
+              
                 <label for="blog_title"><b>Post title:</b></label>
                 <input type="text" name="blog_title" placeholder="Post Title"/>
 
