@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" type=="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         
   
     </head>
@@ -45,6 +46,21 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
+body {
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
 </style>
 </head>
 <body>
@@ -59,10 +75,29 @@ ul.topnav li.right {float: right;}
 </ul>
 
         <h2>Welcome To GAA Life</h2>
-        <p>Home to GAA Gear,News and Chat for lovers of Hurling and Football</p>
+        
+          <p class="lead">Do you want to connect with people who love GAA?</p>
+          <p class="lead ">
+             Do you want to support and feel part of something bigger in the GAA community? 
+          </p>
+          <p class="lead ">
+             GAA Life is the place to be for GAA chat and banter .
+          </p>
+          <p class="lead ">
+              Buy our official merchandise in your county colours.
+          </p>
+          <p class="lead ">
+              Our discord server is a cool place to hang out and make friends
+          </p>
+          <p class="lead ">
+              We have blog section where you can have your opinons published
+          </p>
+          <p class="lead ">
+              We have a commenting section to 
+          </p>
         
      
-     
+          <footer>
      <div id="disqus_thread"></div>
 <script>
     <!--Code taken from Disqus tutorial https://gaalife.disqus.com/admin/install/platforms/universalcode/-->
@@ -83,5 +118,5 @@ ul.topnav li.right {float: right;}
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                  
+</footer>                
     </body>

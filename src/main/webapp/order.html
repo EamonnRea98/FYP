@@ -51,7 +51,7 @@ ul.topnav li.right {float: right;}
   <li><a class="active" href="main.html">Home</a></li>
   <li><a href="shop.html">Shop</a></li>
   <li><a href="forum.html">Forum</a></li>
-  <li><a href="blog.html">Write for Us</a></li>
+  <li><a href="blog.jsp">Write for Us</a></li>
   <li><a href="BlogSubmitted.html">Our Users Opinions</a></li>
   <li class="right"><a href="contact.html">Contact Us</a></li>
 </ul>
@@ -79,12 +79,12 @@ ul.topnav li.right {float: right;}
       
     <div class="form-group col-md-5">
       <label for="inputProduct">Product</label>
-      
+      <select id="inputproduct" class="form-control" name="orderproduct" required>
         <option value ="" selected>Select Product </option>
         <option value=	"Automotive">Jersey </option>
         <option value=	"Half-zip">Half-zip</option>
-        <option value=	"Hats">Computers & Electronics</option>
-        
+        <option value=	"Hats">Hats</option>
+      </select>
     </div>
       
     <div class="form-group col-md-2">

@@ -78,24 +78,16 @@ ul.topnav li.right {float: right;}
 
                 <br/>
                 <br/>
-
+<form action="submitblog">
                 <div id="textareastuff">
                     <label for="blog_content"><b>Your blog</b></label>
                     <textarea placeholder="Blog Content" name="blog_content" cols="50" rows="10"></textarea>
                 </div>
 
                 <br/>
-
-        <h2>Welcome To GAA Life</h2>
-        <p>Home to GAA News and Chat for lovers of Hurling and Football</p>
-        <form action="main.html">
-
-<textarea id="w3review" name="w3review" rows="10" cols="50">
-  Submit your posts here and the best will be published on our site
-  </textarea>
-  <br><br>
-  <input type="submit" value="Submit">
+                <button type="submit" formaction="BlogSubmitted.html" class="btn btn-primary">Submit</button>
 </form>
+        
     </body>
 </html>
 

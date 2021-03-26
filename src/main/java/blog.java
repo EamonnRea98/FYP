@@ -44,17 +44,17 @@ public class blog extends HttpServlet{
             mydb db = new mydb();
             Connection con = db.getCon();
 
-            //SQL statement that will add blog post to the table
+            
             Statement stmt = con.createStatement();
             stmt.executeUpdate(blog_content + "','" + "INSERT INTO blog_submissions (username, blog_type, blog_title, blog_content,) VALUES('" + username + "','" + blog_type + "','" + blog_title + "','");
 
-            //success statement
-            out.println("<div style=\"background-color: antiquewhite; padding: 10px; padding-left: 50px;\">");;
+           
+            
             out.println("<form action=\"blog.jsp#blog\">");
             out.println(username + ", your post has been added!");
             out.println("<br/>");
-            //session handling
-            out.println("<input type=\"submit\" value=\"Return to Blog Home\"/>");
+            
+            out.println("<input type=\"submit\" value=\"Return to home\"/>");
             out.println("</form>");
             out.println("</div>");
 
@@ -109,5 +109,11 @@ public class blog extends HttpServlet{
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    private static class Blog {
+
+        public Blog() {
+        }
+    }
 
 }
